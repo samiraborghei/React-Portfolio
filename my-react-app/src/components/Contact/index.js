@@ -1,17 +1,26 @@
 import './index.scss'
 
+let useRef;
+
 const Contact = () => {
+    const refForm = useRef
+    const sendEmail = (e) => {
+        e.preventDefault()
+
+        
+    }
 
     return (
         <>
-        <h1>Contact Me</h1>
+        <center><h1>Contact Me</h1>
         <h3>Get in touch!</h3>
         <p>
             I'd love to hear from you, you attractive person you.
 
         </p>
+        <p>samira.borghei@hotmail.com</p></center>
         <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
                 <ul>
                     <li className="half">
                         <input type="text" name="name" placeholder="Name" required />
@@ -26,7 +35,7 @@ const Contact = () => {
 
                     </li>
                     <li>
-                        <Input placeholder="Subject" type="text" name="subject" required />
+                        <input placeholder="Subject" type="text" name="subject" required />
                     </li>
                     <li>
                         <textarea

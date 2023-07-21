@@ -1,6 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import SamiraL from '../../assets/images/samira-logo.png'
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Sidebar = () => (
     <div className="nav-bar">
@@ -8,23 +13,25 @@ const Sidebar = () => (
             <img src={SamiraL} alt="logo" />
         </Link>
         <nav>
-            <navLink exact="true" activeclassname="active" to="/">
+            <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </navLink>
-            <navLink exact="true" activeclassname="active" to="/">
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </navLink> <navLink exact="true" activeclassname="active" to="/">
+            </NavLink> 
+            <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </navLink> <navLink exact="true" activeclassname="active" to="/">
+            </NavLink> 
+            <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-            </navLink>
+            </NavLink>
             <NavLink
             exact="true"
             activeclassname="active"
             className="contact-link"
             to="/contact"
             >
-                <FontAwesomeIcon icon={faEnveope} color="#4d4d4e"/>
+                <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
             </NavLink>
         </nav>
         <ul>
