@@ -1,5 +1,9 @@
 # React-Portfolio
 
+## Description
+A simple portfolio template for developer/designers built with React.
+
+
 
 Before run the project please run the command 
 
